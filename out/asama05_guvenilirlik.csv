@@ -1,0 +1,15 @@
+arm,method,description,cells,median,q25,q75,worst,reliable_share,below_075_share,median_width,infinite_share
+MIR (method-matched),C0,C0  source conformal,42,0.754,0.498,0.847,0.242,0.238,0.452,1.407,0.0
+MIR (method-matched),C0n,C0n  normalized,42,0.802,0.688,0.855,0.279,0.286,0.381,1.596,0.0
+MIR (method-matched),C1,C1  weighted,42,0.823,0.685,0.935,0.27,0.429,0.381,1.64,0.109
+MIR (method-matched),C1c,C1c  weighted (clipped),42,0.801,0.653,0.859,0.295,0.262,0.381,1.689,0.0
+MIR (method-matched),C4,C4  CQR,21,0.885,0.611,0.928,0.332,0.524,0.286,2.071,0.0
+MIR (method-matched),C2,C2  k = 25 target labels,42,0.923,0.913,0.928,0.882,1.0,0.0,2.63,0.0
+MIR (method-matched),C3n,"C3n  affine + normalized, k = 25",42,0.925,0.916,0.933,0.897,1.0,0.0,2.269,0.0
+Vis-NIR (method-mixed),C0,C0  source conformal,28,0.848,0.586,0.873,0.002,0.5,0.393,1.396,0.0
+Vis-NIR (method-mixed),C0n,C0n  normalized,28,0.864,0.69,0.894,0.013,0.571,0.321,1.706,0.0
+Vis-NIR (method-mixed),C1,C1  weighted,28,0.931,0.873,0.992,0.569,0.857,0.071,2.246,0.227
+Vis-NIR (method-mixed),C1c,C1c  weighted (clipped),28,0.86,0.686,0.916,0.004,0.536,0.357,1.825,0.0
+Vis-NIR (method-mixed),C4,C4  CQR,14,0.887,0.852,0.919,0.621,0.714,0.214,2.008,0.0
+Vis-NIR (method-mixed),C2,C2  k = 25 target labels,28,0.927,0.915,0.931,0.9,1.0,0.0,2.542,0.0
+Vis-NIR (method-mixed),C3n,"C3n  affine + normalized, k = 25",28,0.929,0.925,0.934,0.9,1.0,0.0,2.435,0.0

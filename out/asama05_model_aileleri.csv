@@ -1,0 +1,7 @@
+arm,family,median,worst,reliable,cells
+MIR (method-matched),cnn,0.845,0.323,0.476,21
+MIR (method-matched),hgb,0.754,0.279,0.286,21
+MIR (method-matched),plsr,0.751,0.261,0.238,21
+Vis-NIR (method-mixed),cnn,0.846,0.413,0.5,14
+Vis-NIR (method-mixed),hgb,0.834,0.408,0.5,14
+Vis-NIR (method-mixed),plsr,0.754,0.006,0.357,14

@@ -1,0 +1,25 @@
+arm,method,k,coverage,width
+MIR (method-matched),C2,10,0.902,2.6
+MIR (method-matched),C2,25,0.923,2.63
+MIR (method-matched),C2,50,0.9,2.337
+MIR (method-matched),C2,100,0.902,2.309
+MIR (method-matched),C3,10,0.898,2.157
+MIR (method-matched),C3,25,0.922,2.173
+MIR (method-matched),C3,50,0.902,1.849
+MIR (method-matched),C3,100,0.904,1.808
+MIR (method-matched),C3n,10,0.91,2.515
+MIR (method-matched),C3n,25,0.925,2.269
+MIR (method-matched),C3n,50,0.903,1.849
+MIR (method-matched),C3n,100,0.904,1.903
+Vis-NIR (method-mixed),C2,10,0.911,2.335
+Vis-NIR (method-mixed),C2,25,0.927,2.542
+Vis-NIR (method-mixed),C2,50,0.904,2.211
+Vis-NIR (method-mixed),C2,100,0.9,2.196
+Vis-NIR (method-mixed),C3,10,0.899,2.533
+Vis-NIR (method-mixed),C3,25,0.926,2.299
+Vis-NIR (method-mixed),C3,50,0.903,2.074
+Vis-NIR (method-mixed),C3,100,0.9,1.964
+Vis-NIR (method-mixed),C3n,10,0.91,2.649
+Vis-NIR (method-mixed),C3n,25,0.929,2.435
+Vis-NIR (method-mixed),C3n,50,0.906,2.147
+Vis-NIR (method-mixed),C3n,100,0.903,2.021
