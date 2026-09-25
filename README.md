@@ -29,13 +29,18 @@ Properties: clay content, organic carbon, total nitrogen, pH in water.
 
 ## Pre-registered expectations
 
-Each script contains a block of expectations, together with the rule by which
-each would be judged, that was written **before that script was run**. Every
-script prints its expectations and their outcomes at the end of its run; the
-printed outcomes are reproduced in Table 4 of the manuscript. Twenty
-expectations were registered across the five analyses; sixteen were met and
-four were not. The four that failed are reported in the manuscript with the
-same weight as those that held.
+Scripts `asama02`, `asama03`, `asama04`, `asama06` and `asama07` each contain a
+block of expectations, together with the rule by which each would be judged,
+that was written **before that script was run**. Every one of them prints its
+expectations and their outcomes at the end of its run; the printed outcomes are
+reproduced in Table 4 of the manuscript. Twenty expectations were registered
+across those five analyses; sixteen were met and four were not. The four that
+failed are reported in the manuscript with the same weight as those that held.
+
+`asama08` is the exception and is **not** part of the pre-registration. It was
+written after the main results were complete, to test whether the loss of
+interval coverage is explained by the loss of point-prediction accuracy, and
+Section 3.9 of the manuscript labels its result as exploratory.
 
 ## Scripts
 
@@ -50,7 +55,8 @@ Run them in order from the repository root. Each writes its result tables to
 | `asama04_cqr_alpha.py` | Conformalized quantile regression and the sensitivity to the nominal level (0.80 / 0.90 / 0.95). |
 | `asama06_cnn.py` | 1D-CNN model family under a reduced protocol. Requires PyTorch. |
 | `asama07_eslesmis_temel.py` | PLSR and gradient boosting re-run under the identical CNN protocol, so the model is the only difference. |
-| `asama05_figurler.py` | Figures 1–7 and the summary tables. Fits no models; reads the CSVs written by the scripts above, so run it last. |
+| `asama05_figurler.py` | Figures 1–7 and the summary tables. Fits no models; reads the CSVs written by the scripts above, so run it after asama02–asama04, asama06 and asama07. |
+| `asama08_nokta_vs_kapsama.py` | Figure 8: whether the coverage failure is explained by the loss of point-prediction accuracy. Fits no models; reads the per-cell table from asama07, so run it last. |
 
 Typical invocation:
 
@@ -79,7 +85,7 @@ python scripts/asama05_figurler.py          # both arms at once, no arguments
 
 - `out/` — per-cell and summary result tables as CSV. These are the numbers
   quoted in the manuscript.
-- `figures/` — Figures 1–7 as 300 dpi PNG and vector PDF.
+- `figures/` — Figures 1–8 as 300 dpi PNG and vector PDF.
 
 ## Environment
 
@@ -91,8 +97,8 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu   # for asama
 ```
 
 Runtimes on a laptop CPU: the main analysis takes roughly 10 minutes per arm,
-the seed and CQR analyses 15–25 minutes each, and the figure script under a
-minute.
+the seed and CQR analyses 15–25 minutes each, and the two figure scripts under
+a minute each.
 
 ## License
 

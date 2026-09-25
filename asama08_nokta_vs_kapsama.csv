@@ -1,0 +1,3 @@
+arm,cells,rho_ratio,p_ratio,rho_target_rmse,p_target_rmse,median_ratio,cells_accuracy_kept_coverage_below_080
+MIR (method-matched),42,0.076,0.6342,-0.199,0.2062,2.071,3
+Vis-NIR (method-mixed),28,-0.715,0.0,-0.632,0.0003,1.508,1
